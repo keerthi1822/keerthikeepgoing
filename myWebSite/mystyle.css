@@ -1,0 +1,99 @@
+body {
+  /* background: #fff;
+  filter:invert(1)hue-rotate(210deg); */
+  background: cadetblue;
+  line-height: 1;
+  margin: 0 15%;
+  display: flex;
+  border: 1px solid rgb(78, 83, 87);
+  font-family: "Merienda", cursive;
+}
+aside {
+  padding-top: 6%;
+  width: 15%;
+  height: 100%;
+  background-color: rgb(78, 83, 87);
+}
+aside h2 {
+  padding-bottom: 6%;
+  color: white;
+  text-align: center;
+}
+
+aside ul {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+aside ul li {
+  margin-top: 20%;
+  height: 10vh;
+  width: 10vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: azure;
+  border-radius: 50%;
+  list-style-type: none;
+  font-size: 1em;
+  font-weight: normal;
+  position: relative;
+}
+aside ul li:hover {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+p{
+  line-height:1.2em;
+}
+#body_div {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0;
+  background-color: rgb(243, 243, 247);
+  position: relative;
+}
+
+#body_header{
+  display: flex;
+}
+#mypicture {
+  margin: 3%;
+  border-radius: 10px 50px;
+  height: 25%;
+  width: 20%;
+  border: 5px initial rgb(126, 108, 108);
+}
+#my_nav {
+  
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  height: 25%;
+  border: 5px initial rgb(126, 108, 108);
+  border-radius: 5px;
+}
+#my_nav > h3 {
+  font-family: cursive;
+  font-size: 30px;
+  color: rgb(77, 35, 90);
+  font-weight: bolder;
+}
+#aboutMe_content {
+  font-family: "Merienda", cursive;
+  line-height: 3vh;
+}
+nav {
+  background-color: antiquewhite;
+}
+nav ul {
+  margin: 0;
+  display:flex;
+  list-style-type: none;
+  justify-content: space-around;
+}

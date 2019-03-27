@@ -1,0 +1,160 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+   display:flex;
+   flex-flow:column wrap;
+    background-color: rgb(248, 249, 252);
+    text-align:left;
+    width:100%;
+    border-bottom:2px solid rgb(243, 238, 238);
+}
+
+h1 {
+    font-size: 33px;
+    line-height: 70px;
+}
+
+h1 + p{
+color:rgb(163, 159, 159);
+font-size: 20px;
+}
+
+nav#top-nav ul {
+    list-style-type: none;
+    margin:30px 0;   
+}
+
+nav#top-nav ul li {
+    display:flex;
+    flex-flow:row wrap;
+    padding-right:20px;
+    
+}
+
+@media all and (max-width: 800px) {
+    nav#top-nav ul li  {
+      justify-content: space-around;
+    }
+}
+nav#top-nav ul li a {
+    color: rgb(31, 30, 30);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav#top-nav ul li:nth-child(2) a {
+    color: rgb(163, 159, 159);
+}
+
+#display-img img {
+    width:100%;
+    height:500px;
+}
+
+.article {
+    height:500px;
+    display:flex;
+    width:75%; 
+    margin:auto;
+    margin-top:50px;    
+}
+
+article h3 {
+font-size: 22px;
+}
+
+.aside {
+    order:1;
+}
+
+.aside h3 {
+    font-size:14;
+    font-weight: bold;
+}
+
+aside p{
+    font-size: 14px;
+    line-height: 1.2em;
+    margin-top: 10px;
+}
+
+div article {
+    order:2;
+}
+
+.article article p {
+    font-size: 17px;
+}
+
+h3 ~ p {
+    color:rgb(141, 141, 192);
+    padding:10px 0;
+}
+
+.gallery-icons{
+    display:flex;
+    width:75%; 
+    margin:auto;
+    margin-top:50px;
+    height:750px;
+}
+
+.logos {
+   padding-left:80px;
+    order:2;
+}
+
+.logos img {
+    padding:45px;
+}
+
+footer {
+    display:flex;
+    background-color: rgb(57, 57, 224);
+    color:white;
+    padding:50px;
+   justify-content: center;
+}
+
+.findUs {
+    order:1;
+    
+    margin:auto;
+    font-weight: bold;
+}
+footer div h3~p {
+    color:white;
+}
+footer div h3 {
+    padding-bottom:20px;
+}
+
+.aboutPage {
+    order:2;
+   
+}
+
+.archives {
+    order:3;
+   
+}
+
+.nav-bottom {
+    order:4;
+   
+}
+footer div ul li {
+    list-style: none;
+    line-height: 50px;
+    border-bottom: 1px solid rgb(87, 73, 173);
+   
+}
+.archives li:last-child, .nav-bottom li:last-child {
+    border-bottom: none;
+}
+
