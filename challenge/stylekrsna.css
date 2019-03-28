@@ -1,0 +1,19 @@
+p{
+    color: red;
+    position: relative;
+    -webkit-animation: mymove 4s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation: mymove 4s;
+    animation-fill-mode: forwards;
+  }
+  
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 640px; color: blue;font-size: 100px}
+  }
+  
+  @keyframes mymove {
+    from {top: 0px;}
+    to {top:640px; color: blue;font-size: 100px}
+  }

@@ -1,0 +1,168 @@
+body{
+    margin:0;
+    padding:0;
+    /* background-image: url('HYFgrouppic.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%; */
+}
+.rainbow{
+overflow:hidden;
+}
+.color{
+    width: 100%;
+    height:92px;
+    /* position: relative; */
+   
+}
+ /* --------------violet--------------- */
+#violet {
+    
+    background:violet;
+    
+    -webkit-animation: violetColor 5s ease-in 1ms 1; 
+    animation: violetColor 5s ease-in 1ms 1;
+   
+  }
+  
+@keyframes violetColor{
+   from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  } 
+/* --------------indigo--------------- */
+#indigo {
+    
+    background:indigo;
+    
+    -webkit-animation: indigoColor 5s ease-out 1; 
+    animation: indigoColor 5s ease-out 1ms 1;
+  }
+  
+@keyframes indigoColor{
+   from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+/* --------------blue--------------- */
+#blue {
+    
+    background:blue;
+    
+    -webkit-animation: blueColor 5s linear 1ms 1; 
+    animation: blueColor 5s linear 1ms 1;
+  }
+  
+@keyframes blueColor{
+   from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+/* --------------green--------------- */
+#green {
+    
+    background:green;
+    
+    -webkit-animation: greenColor 5s ease-in-out 1ms 1; 
+    animation: greenColor 5s ease-in-out 1ms 1;
+  }
+  
+@keyframes greenColor{
+   from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+/* --------------yellow--------------- */
+#yellow {
+    
+    background:yellow;
+    
+    -webkit-animation: yellowColor 5s ease-in 1ms 1; 
+    animation: yellowColor 5s ease-in 1ms 1;
+  }
+  
+@keyframes yellowColor{
+   from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+/*--------------- orange-------------- */
+#orange {
+    
+    background:orange;
+    
+    -webkit-animation: orangeColor 5s ease-in-out 1ms 1; 
+    animation: orangeColor 5s ease-in-out 1ms 1;
+    animation-fill-mode: forwards;
+  }
+  
+@keyframes orangeColor{
+   from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+/* ------red-------- */
+
+#red {
+    
+    background: red;
+    
+    -webkit-animation: redColor 5s ease-out 1ms 1; 
+    animation: redColor 5s ease-out 1ms 1;
+  }
+  
+@keyframes redColor{
+   from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+  
