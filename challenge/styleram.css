@@ -1,10 +1,10 @@
-body{
+ body{
     margin:0;
     padding:0;
-    /* background-image: url('HYFgrouppic.jpg');
+    background-image: url('HYFgrouppic.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100%; */
+    background-size: 100%; 
 }
 .rainbow{
 overflow:hidden;
@@ -20,8 +20,8 @@ overflow:hidden;
     
     background:violet;
     
-    -webkit-animation: violetColor 5s ease-in 1ms 1; 
-    animation: violetColor 5s ease-in 1ms 1;
+    -webkit-animation: violetColor 2s ease-in 1ms 1; 
+    animation: violetColor 2s ease-in 1ms 1;
    
   }
   
@@ -41,8 +41,8 @@ overflow:hidden;
     
     background:indigo;
     
-    -webkit-animation: indigoColor 5s ease-out 1; 
-    animation: indigoColor 5s ease-out 1ms 1;
+    -webkit-animation: indigoColor 2s ease-out 1; 
+    animation: indigoColor 2s ease-out 1ms 1;
   }
   
 @keyframes indigoColor{
@@ -61,8 +61,8 @@ overflow:hidden;
     
     background:blue;
     
-    -webkit-animation: blueColor 5s linear 1ms 1; 
-    animation: blueColor 5s linear 1ms 1;
+    -webkit-animation: blueColor 2s linear 1ms 1; 
+    animation: blueColor 2s linear 1ms 1;
   }
   
 @keyframes blueColor{
@@ -82,8 +82,8 @@ overflow:hidden;
     
     background:green;
     
-    -webkit-animation: greenColor 5s ease-in-out 1ms 1; 
-    animation: greenColor 5s ease-in-out 1ms 1;
+    -webkit-animation: greenColor 2s ease-in-out 1ms 1; 
+    animation: greenColor 2s ease-in-out 1ms 1;
   }
   
 @keyframes greenColor{
@@ -103,8 +103,8 @@ overflow:hidden;
     
     background:yellow;
     
-    -webkit-animation: yellowColor 5s ease-in 1ms 1; 
-    animation: yellowColor 5s ease-in 1ms 1;
+    -webkit-animation: yellowColor 2s ease-in 1ms 1; 
+    animation: yellowColor 2s ease-in 1ms 1;
   }
   
 @keyframes yellowColor{
@@ -125,8 +125,8 @@ overflow:hidden;
     
     background:orange;
     
-    -webkit-animation: orangeColor 5s ease-in-out 1ms 1; 
-    animation: orangeColor 5s ease-in-out 1ms 1;
+    -webkit-animation: orangeColor 2s ease-in-out 1ms 1; 
+    animation: orangeColor 2s ease-in-out 1ms 1;
     animation-fill-mode: forwards;
   }
   
@@ -148,8 +148,8 @@ overflow:hidden;
     
     background: red;
     
-    -webkit-animation: redColor 5s ease-out 1ms 1; 
-    animation: redColor 5s ease-out 1ms 1;
+    -webkit-animation: redColor 2s ease-out 1ms 1; 
+    animation: redColor 2s ease-out 1ms 1;
   }
   
 @keyframes redColor{
@@ -162,7 +162,24 @@ overflow:hidden;
       margin-left: 0%;
       width: 100%;
     }
+  } 
+
+  p{
+    color: red;
+    position: relative;
+    -webkit-animation: mymove 4s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation: mymove 4s;
+    animation-fill-mode: forwards;
   }
-
-
   
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 640px; color: blue;font-size: 100px}
+  }
+  
+  @keyframes mymove {
+    from {top: 0px;}
+    to {top:640px; color: blue;font-size: 100px}
+  }
