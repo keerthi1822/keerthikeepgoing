@@ -1,13 +1,13 @@
 const HYFImages = [
   "HYFgrouppic.jpg",
   "HYFgrouppic.jpg",
-  "lucky.jpg",
+  "lucky.JPG",
   "HYFgrouppic.jpg",
   "HYFgrouppic.jpg",
-  "lucky.jpg",
+  "lucky.JPG",
   "HYFgrouppic.jpg",
   "HYFgrouppic.jpg",
-  "keerthi.jpg"
+  "keerthi.JPG"
 ];
 const body = document.querySelector("body");
 let i = 0;
