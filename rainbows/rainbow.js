@@ -68,7 +68,7 @@ setTimeout(()=>{
     c.style = `margin-left:${margin}px;transform : translateY(720px);`;
 },1000)
 i++;
-if(i>10){
+if(i>7){
     clearInterval(rainbowInterval);
     translateImages();
 }
@@ -82,7 +82,7 @@ if(i>10){
     const HYFImages = [
         "marie.jpg",
         "marta.jpg",
-        "lucky.JPG",
+        "grouppic.JPG",
         "zaki.jpg",
         "abed.jpg",
         "christopher.jpg",
