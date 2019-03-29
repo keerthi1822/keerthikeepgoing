@@ -1,22 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('HYFgrouppic.jpg');
+  /* background-image: url('HYFgrouppic.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100%; 
-    overflow: hidden;
+    background-size: 100%;  */
+    /* overflow: hidden; */
 }
 h1{
+    margin:auto;
     color:blue;
-    text-align: center;
+   
+
     font-size:40px;   
 }
-.rainbow {
-  display: flex;
-  flex-wrap: wrap;
- 
-}
+
 img {
   width: 200px;
   height: 200px;
@@ -24,6 +22,7 @@ img {
   border-radius: 50%;
   transition: transform, opacity;
   transition-duration: 5s;
+/*   position: relative; */
 }
 /* #indigo {
   transform: translateY(-400px);
