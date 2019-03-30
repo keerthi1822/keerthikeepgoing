@@ -1,21 +1,36 @@
 body {
   width: 70%;
-  height: 70%;
+  height: 700%;
   /*  background-image: url('HYF.png'); */
-  background-image: url("holibg.jpg");
-  background-color: black;
+  background-image: url("holicolors.jpg");
+ /*  background-color: black; */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
   overflow: hidden;
+  
+}
+canvas {
+  transition-duration: 7s;
+  position: absolute;
+}
+img {
+  width: 200px;
+  height: 200px;
+  /*  border: 1px solid gray; */
+  border-radius: 50%;
+  transition: transform, opacity;
+  transition-duration: 10s;
+  position: absolute;
 }
 
-h1 {
-  font-size: 58px;
-}
+
 p {
   visibility: hidden;
 }
+
+
+
 #HYF {
   text-align: center;
   justify-content: center;
@@ -30,13 +45,12 @@ p {
     visibility: visible;
     font-size: 30px;
     color: rgb(44, 11, 99);
-    right: 1300px;
+    left: 130px;
   }
   to {
     font-size: 70px;
-    right: 400px;
+    left: 200px;
     color: yellowgreen;
-    visibility: visible;
   }
 }
 #holi {
@@ -53,12 +67,12 @@ p {
   from {
     visibility: visible;
     font-size: 30px;
-    color: rgb(44, 11, 99);
+    color: rgb(215, 163, 228);
     left: 30px;
   }
   to {
     font-size: 70px;
-    left: 500px;
+    left: 200px;
     color: rgb(42, 46, 104);
   }
 }
@@ -68,7 +82,7 @@ p {
   font-size: 70px;
   font-family: cursive;
 
-  animation: andText 4s;
+  animation: andText 2s;
   animation-delay: 8s;
   animation-fill-mode: forwards;
 }
@@ -81,65 +95,100 @@ p {
   }
   to {
     font-size: 70px;
-    right: 600px;
+    right: 200px;
     color: rgb(65, 186, 202);
   }
 }
-#nowruz {
+/* #nowruz {
+  visibility: visible;
   text-align: center;
   justify-content: center;
   font-size: 70px;
   font-family: cursive;
 
   animation: nowruzText 4s;
-  animation-delay: 8s;
+  animation-delay: 10s;
   animation-fill-mode: forwards;
 }
 @keyframes nowruzText {
   from {
     visibility: visible;
     font-size: 30px;
-    color: rgb(175, 153, 53);
-    right: 1300px;
+    color: rgb(44, 11, 99);
+    left: 13px;
   }
   to {
     font-size: 70px;
-    right: 400px;
-    color: rgb(65, 186, 202);
+    left: 200px;
+    color: rgb(53, 11, 63);
+    visibility: visible;
   }
-}
-span {
+} */
+#nowruz{
   visibility: hidden;
+  text-align: center;
+  justify-content: center;
   font-size: 70px;
   font-family: cursive;
-  animation: HYFfinalText 6s;
-  animation-delay: 10s;
+  font-style: bold;
+  animation: nowruz 18s;
   animation-fill-mode: forwards;
 }
-@keyframes HYFfinalText {
+@keyframes nowruz {
   from {
-     float:right;
+    visibility: visible;
     font-size: 30px;
-    color: rgb(175, 153, 53);
-    }
+    color: rgb(44, 11, 99);
+    left: 13px;
+  }
   to {
-    float:right;
-    font-size: 70px;
-    color: rgb(65, 186, 202);
+    font-size: 130px;
+    left: 200px;
+    color: rgb(209, 34, 130);
     visibility: visible;
   }
 }
-
-canvas {
-  transition-duration: 7s;
-  position: absolute;
+/* #image {
+visibility: hidden;
+  animation: HYFpic 6s;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+  
 }
-img {
-  width: 200px;
-  height: 200px;
-  /*  border: 1px solid gray; */
-  border-radius: 50%;
-  transition: transform, opacity;
-  transition-duration: 10s;
-  position: absolute;
+@keyframes HYFpic {
+  from {
+    visibility: visible;
+    align-content: center;
+    
+    }
+  to {
+    top:0px;
+    width:200%;
+    height: 100%;
+   visibility: visible;
+  }
+} */
+#thanks{
+  visibility: hidden;
+  text-align: center;
+  justify-content: center;
+  font-size: 70px;
+  font-family: cursive;
+  font-style: bold;
+  animation: HYFThanks 18s;
+  animation-fill-mode: forwards;
+}
+@keyframes HYFThanks {
+  from {
+    visibility: visible;
+    font-size: 30px;
+    color: rgb(44, 11, 99);
+    left: 13px;
+  }
+  to {
+    font-size: 65px;
+    left: 200px;
+    color: rgb(69, 16, 71);
+    visibility: visible;
+  }
 }
