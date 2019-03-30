@@ -19,7 +19,7 @@ ctxV.lineWidth = 5;
 ctxV.strokeStyle = "#EE82EE";
 ctxV.stroke();
 document.body.appendChild(c);
-c.style = `margin-left:${margin}px;transform : translateY(-200px);`;
+c.style = `margin-left:${margin}px;transform : translateY(-1400px);`;
 
 let ctxI = c.getContext("2d");
 ctxI.beginPath();
@@ -103,7 +103,7 @@ if(i>7){
         let margin = Math.floor(Math.random() * 900);
         img.src = HYFImages[Math.floor(Math.random() * 10)];
         document.body.appendChild(img);
-        img.style = `margin-left:${margin}px;transform : translateY(-1000px)`;
+        img.style = `margin-left:${margin}px;transform : translateY(-1400px)`;
       
         setTimeout(() => {
           img.style = `margin-left:${margin}px;transform : translateY(1000px);`;
@@ -113,5 +113,5 @@ if(i>7){
             clearInterval(imgInterval);
             rainbow();
         }
-      }, 500);
+      }, 1000);
  }
