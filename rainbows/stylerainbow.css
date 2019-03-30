@@ -37,7 +37,7 @@ p {
   font-size: 70px;
   font-family: cursive;
   font-style: bold;
-  animation: HYFText 4s;
+  animation: HYFText 6s;
   animation-fill-mode: forwards;
 }
 @keyframes HYFText {
@@ -131,7 +131,8 @@ p {
   font-size: 70px;
   font-family: cursive;
   font-style: bold;
-  animation: nowruz 18s;
+  animation-delay: 3s;
+  animation: nowruz 12s;
   animation-fill-mode: forwards;
 }
 @keyframes nowruz {
@@ -143,7 +144,8 @@ p {
   }
   to {
     font-size: 130px;
-    left: 200px;
+    top:400px;
+    left: 400px;
     color: rgb(209, 34, 130);
     visibility: visible;
   }
@@ -175,6 +177,7 @@ visibility: hidden;
   font-size: 70px;
   font-family: cursive;
   font-style: bold;
+  animation-delay: 3s;
   animation: HYFThanks 18s;
   animation-fill-mode: forwards;
 }

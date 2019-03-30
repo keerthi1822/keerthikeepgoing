@@ -117,7 +117,7 @@ function translateImages() {
         body.style = `background-image:url('nowruz4.jpg');background-size:contain;
         height:'690px';resize: both;`;
         body.innerHTML = ` <div id="image">
-        <p id="nowruz" style = "float:right;padding-left:250px;">Happy <br> NowRuz </p>
+        <p id="nowruz" style = "float:right;">Happy <br> NowRuz </p>
       </div>`;
 
       }
