@@ -114,17 +114,24 @@ function translateImages() {
       count++;
      console.log(count);
      if(count == 1){
-        body.style = `background-image:url('nowruz4.jpg');background-size:contain;
-        height:'690px';resize: both;`;
+        body.style = `background-image:url('nowruz6.jpg');height:100%;width:100%;background-size:cover;`;
         body.innerHTML = ` <div id="image">
         <p id="nowruz" style = "float:right;">Happy <br> NowRuz </p>
       </div>`;
 
       }
       if(count == 2){
+        body.style = `background-image:url('holicolors.jpg');`;
+        body.innerHTML = ` <div id="image" >
+        <p id="and">
+        AND <br> Happy Holi
+      </p>
+      </div>`;
+      }
+      if(count == 3){
         body.style = `background-image:url('HYFgrouppic.jpg');`;
         body.innerHTML = ` <div id="image">
-        <p id="thanks">Thanks!! <br> Hack your future</p>
+        <p id="thanks">Thanks!!</p>
       </div>`;
       
       }
