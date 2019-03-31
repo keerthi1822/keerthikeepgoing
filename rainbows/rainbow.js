@@ -114,7 +114,8 @@ function translateImages() {
       count++;
      console.log(count);
      if(count == 2){
-        body.style = `background-image:url('nowruz2.jpg');`;
+        body.style = `background-image:url('nowruz2.jpg');backgroung-size:cover;
+        height:100%;width:100%;`;
         body.innerHTML = ` <div id="image">
         <p id="nowruz" style = "float:right;">Happy <br> NowRuz </p>
       </div>`;
