@@ -113,14 +113,14 @@ function translateImages() {
       clearInterval(imgInterval);
       count++;
      console.log(count);
-     if(count == 1){
-        body.style = `background-image:url('nowruz6.jpg');height:100%;width:100%;background-size:cover;`;
+     if(count == 2){
+        body.style = `background-image:url('nowruz2.jpg');`;
         body.innerHTML = ` <div id="image">
         <p id="nowruz" style = "float:right;">Happy <br> NowRuz </p>
       </div>`;
 
       }
-      if(count == 2){
+      if(count == 3){
         body.style = `background-image:url('holicolors.jpg');`;
         body.innerHTML = ` <div id="image" >
         <p id="and">
@@ -128,7 +128,7 @@ function translateImages() {
       </p>
       </div>`;
       }
-      if(count == 3){
+      if(count == 4){
         body.style = `background-image:url('HYFgrouppic.jpg');`;
         body.innerHTML = ` <div id="image">
         <p id="thanks">Thanks!!</p>

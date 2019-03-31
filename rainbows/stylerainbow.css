@@ -42,7 +42,7 @@ p {
 }
 @keyframes HYFText {
   from {
-    visibility: visible;
+   
     font-size: 30px;
     color: rgb(44, 11, 99);
     left: 130px;
@@ -51,6 +51,7 @@ p {
     font-size: 70px;
     left: 200px;
     color: yellowgreen;
+    visibility:visible;
   }
 }
 #holi {
@@ -60,7 +61,7 @@ p {
   font-family: cursive;
 
   animation: holiText 4s;
-  animation-delay: 4s;
+  animation-delay: 8s;
   animation-fill-mode: forwards;
 }
 @keyframes holiText {
@@ -74,6 +75,7 @@ p {
     font-size: 70px;
     left: 200px;
     color: rgb(42, 46, 104);
+    visibility:visible;
   }
 }
 #and {
@@ -147,7 +149,7 @@ p {
     font-size: 130px;
     top:400px;
     left: 400px;
-    color: rgb(176, 39, 221);
+    color: rgb(134, 240, 13);
     visibility: visible;
   }
 }
