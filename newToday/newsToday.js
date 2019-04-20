@@ -1,10 +1,15 @@
 const p = document.querySelector('p');
 
+function music(){
+    let a= new Audio("Love-Night.mp3");
+        a.play();
+}
+
 function surprise() {
     console.log('in surprise function');
-    p.style = 'opacity: 1;transform: scale(2.5);';
-   
-    return new Promise((resolve, reject) => {
+    p.style = 'opacity: 1;transform: scale(3.5);';
+    music();
+    return new Promise((resolve) => {
         console.log('in promise');
         // p.innerText="Happy 1st Anneversary";
        
@@ -49,14 +54,13 @@ function translateImages() {
             clearInterval(imgInterval);
             img.parentNode.removeChild(img);
             setTimeout(() => {
-                p.innerText = "Happy 1st Anneversary";
+                p.innerText = "Happy 1st Anniversary";
                 let confettiSettings = {
                     target: 'confetti'
                 };
                 let confetti = new ConfettiGenerator(confettiSettings);
                 confetti.render();
-                let audio = new Audio("trimmelody.mp3");
-      audio.play();
+                
             }, 500);
 
         }
