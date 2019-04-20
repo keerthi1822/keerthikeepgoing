@@ -55,7 +55,7 @@ function translateImages() {
                 };
                 let confetti = new ConfettiGenerator(confettiSettings);
                 confetti.render();
-                let audio = new Audio("fail-trombone-01.mp3");
+                let audio = new Audio("New-beginning.mp3");
       audio.play();
             }, 500);
 
