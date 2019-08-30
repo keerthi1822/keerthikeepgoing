@@ -1,5 +1,4 @@
-/* let x=Math.floor(Mathrandom()*1000);
-let y=-100; */
+/* let x=Math.floor(Mathrandom()*1000); */
 
 const body = document.querySelector("body");
 let count=0;
@@ -21,7 +20,7 @@ function rainbow() {
       ctxV.strokeStyle = "#EE82EE";
       ctxV.stroke();
       document.body.appendChild(c);
-      c.style = `margin-left:${margin}px;transform : translateY(-1400px);`;
+      c.style = `margin-left:${margin}px;transform : translateY(-500px);`;
 
       let ctxI = c.getContext("2d");
       ctxI.beginPath();
@@ -67,61 +66,15 @@ function rainbow() {
 
       setTimeout(() => {
         c.style = `margin-left:${margin}px;transform : translateY(720px);`;
-      }, 1000);
-     i++;
-      if (i > 7) {
-        clearInterval(rainbowInterval);
-        translateImages();
-      }
-     
-   
-  }, 900);
-}
-
-function translateImages() {
-  const HYFImages = [
-    "marie.jpg",
-    "marta.jpg",
-    
-    "zaki.jpg",
-    "abed.jpg",
-    "christopher.jpg",
-    "benjamin.jpg",
-    
-    "alicia.jpg",
-    "younes.jpg"
-  ];
-  const body = document.querySelector("body");
- i=0;
-
-  let imgInterval = setInterval(() => {
-    const img = document.createElement("img");
-    //img.style.marginTop = "-800px";
-
-    
-    let margin = Math.floor(Math.random() * 900);
-    img.src = HYFImages[Math.floor(Math.random() * 8)];
-    document.body.appendChild(img);
-    img.style = `margin-left:${margin}px;transform : translateY(-1400px)`;
-
-    setTimeout(() => {
-      img.style = `margin-left:${margin}px;transform : translateY(1000px);`;
-    }, 500);
-    i++;
-    
-    if (i > 2) {
-      clearInterval(imgInterval);
-      count++;
-     console.log(count);
-     if(count == 2){
-        body.style = `background-image:url('nowruz7.jpg');backgroung-size:cover;
+      }, 900);  
+      i++;
+      if(i === 9){
+        body.style = `background-image:url('nowruz7.jpg');background-size:cover;
         height:100%;width:100%;`;
         body.innerHTML = ` <div id="image">
-        <p id="nowruz" style = "float:right;">Happy <br> NowRuz </p>
-      </div>`;
-
+        <p id="nowruz" style = "float:right;">Happy <br> NowRuz </p>`;
       }
-      if(count == 3){
+      if(i === 16){
         body.style = `background-image:url('holicolors.jpg');`;
         body.innerHTML = ` <div id="image" >
         <p id="and">
@@ -129,18 +82,30 @@ function translateImages() {
       </p>
       </div>`;
       }
-      if(count == 4){
-        body.style = `background-image:url('HYFgrouppic.jpg');`;
+      if(i === 23){
+         body.style = `background-image:url('holiHYF.jpg');`;
         body.innerHTML = ` <div id="image">
         <p id="thanks">Thanks!!</p>
       </div>`;
-      
+      /*  c.style.visibility="hidden"; */
       }
+  }, 900);
 
-      rainbow();
-    }
-   
-  }, 1000);
 }
 
-rainbow();
+function translateRainbows() {
+  return new Promise((resolve) => {
+       resolve();
+  });
+
+  /* else{
+    reject(error);
+  } */
+}
+
+translateRainbows()
+.then(()=>rainbow());
+
+
+
+

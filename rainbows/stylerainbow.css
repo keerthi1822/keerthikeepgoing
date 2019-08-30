@@ -14,15 +14,14 @@ canvas {
   transition-duration: 7s;
   position: absolute;
 }
-img {
+/* img {
   width: 200px;
   height: 200px;
-  /*  border: 1px solid gray; */
   border-radius: 50%;
   transition: transform, opacity;
   transition-duration: 10s;
   position: absolute;
-}
+} */
 
 
 p {
@@ -61,7 +60,7 @@ p {
   font-family: cursive;
 
   animation: holiText 4s;
-  animation-delay: 8s;
+  animation-delay: 4s;
   animation-fill-mode: forwards;
 }
 @keyframes holiText {
@@ -197,4 +196,10 @@ visibility: hidden;
     color: rgb(69, 16, 71);
     visibility: visible;
   }
+}
+
+@media (max-width: 767px){
+canvas{
+   visibility: hidden;
+}
 }
